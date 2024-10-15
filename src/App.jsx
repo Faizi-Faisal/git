@@ -13,6 +13,7 @@ function App() {
       <div className="App">
         {/* Routes for different pages */}
         <Routes>
+          <Route path="/" element={<PG />} />
           <Route path="/pg" element={<PG />} />
           <Route path="/mess" element={<Mess />} />
           <Route path="/food" element={<Food />} />
