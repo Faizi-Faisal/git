@@ -86,7 +86,7 @@ function PG() {
       </div>
 
       {/* General Section */}
-      <div className="mt-10">
+      <div className="mt-10 mb-14">
         <h2 className="text-xl font-bold text-gray-800 mb-4">General</h2>
         <div className="grid grid-cols-2 gap-4">
           {/* Maintenance Card */}
