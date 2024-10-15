@@ -63,24 +63,24 @@ function Mess() {
   };
 
   return (
-    <div className="flex flex-col p-4 mt-2 pb-10"> {/* Add padding bottom */}
+    <div className="flex flex-col p-2 mt-2 pb-8"> {/* Reduced padding bottom */}
       {/* Title and Track History Button */}
-      <div className="flex justify-between items-center mb-4">
-        <h1 className="text-xl font-semibold text-left">Mess Manager</h1>
+      <div className="flex justify-between items-center mb-2">
+        <h1 className="text-lg font-semibold text-left">Mess Manager</h1> {/* Decreased title size */}
         <button
-          className="text-sm text-gray-500 hover:text-gray-700 font-semibold focus:outline-none" 
+          className="text-xs text-gray-500 hover:text-gray-700 font-semibold focus:outline-none" 
         >
           Track History
         </button>
       </div>
 
       {/* Tab Bar */}
-      <div className="flex space-x-4 overflow-x-auto mb-4 mt-5">
+      <div className="flex space-x-2 overflow-x-auto mb-2 mt-4"> {/* Reduced space between tabs */}
         {tabs.map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`py-2 px-4 border rounded-md 
+            className={`py-1 px-2 border rounded-md 
               ${activeTab === tab ? 'bg-orange-500 text-white' : 'bg-white text-gray-700 border-gray-300'} 
               focus:outline-none ${activeTab !== tab ? 'hover:bg-gray-100' : ''}`}
           >
@@ -90,22 +90,22 @@ function Mess() {
       </div>
 
       {/* Cards for meals */}
-      <div className="space-y-4 mt-5 mb-14">
+      <div className="space-y-3 mt-4 mb-10"> {/* Reduced space between cards */}
         {meals.map((meal) => (
-          <div key={meal} className="border rounded-lg p-4 bg-white shadow-md flex flex-col justify-between mb-4">
+          <div key={meal} className="border rounded-lg p-3 bg-white shadow-md flex flex-col justify-between mb-3"> {/* Decreased padding */}
             <div className="flex justify-between items-center">
               <div>
-                <h2 className="text-xl font-semibold">{meal}</h2>
-                <p className="text-gray-500">{date}</p>
+                <h2 className="text-lg font-semibold">{meal}</h2> {/* Decreased meal title size */}
+                <p className="text-gray-500 text-xs">{date}</p> {/* Decreased date size */}
               </div>
               {showButtons && (
-                <div className="flex space-x-2">
+                <div className="flex space-x-1">
                   {/* Close Button on the Left */}
-                  <button className="flex items-center justify-center w-8 h-8 border border-red-500 rounded-full text-red-500 hover:bg-red-100 focus:outline-none">
+                  <button className="flex items-center justify-center w-7 h-7 border border-red-500 rounded-full text-red-500 hover:bg-red-100 focus:outline-none">
                     <FaTimes />
                   </button>
                   {/* Tick Button on the Right */}
-                  <button className="flex items-center justify-center w-8 h-8 border border-green-500 rounded-full text-green-500 hover:bg-green-100 focus:outline-none">
+                  <button className="flex items-center justify-center w-7 h-7 border border-green-500 rounded-full text-green-500 hover:bg-green-100 focus:outline-none">
                     <FaCheck />
                   </button>
                 </div>
@@ -115,14 +115,14 @@ function Mess() {
             {/* Expanded Section */}
             <div className={`mt-2 transition-all duration-300`}>
               {showButtons && (
-                <div className="mb-2 h-8 bg-orange-100 flex items-center rounded cursor-pointer mt-3" onClick={() => handleToggle(meal)}>
-                  <span className="text-gray-700 text-sm text-left mx-2">Show Menu</span>
+                <div className="mb-2 h-8 bg-orange-100 flex items-center rounded cursor-pointer mt-2" onClick={() => handleToggle(meal)}>
+                  <span className="text-gray-700 text-xs text-left mx-2">Show Menu</span> {/* Decreased text size */}
                 </div>
               )}
               <div className={`${expandedCards[meal] ? 'h-auto bg-white' : 'h-0 overflow-hidden'} transition-all duration-300 rounded`}>
                 {expandedCards[meal] && (
                   <div className="transition-all duration-300">
-                    <p className="text-gray-700">Here is the menu for {meal}.</p>
+                    <p className="text-gray-700 text-xs">Here is the menu for {meal}.</p> {/* Decreased text size */}
                     {/* Additional menu items can be listed here */}
                   </div>
                 )}
@@ -130,11 +130,11 @@ function Mess() {
             </div>
 
             {/* Booking Status Message */}
-            <p className={`${statusColor} mt-2`}>{bookingStatus}</p>
+            <p className={`${statusColor} mt-2 text-xs`}>{bookingStatus}</p> {/* Decreased status message size */}
             
             {/* Conditionally Render Add Addon Button */}
             {activeTab !== 'Yesterday' && (  // Only render if not on 'Yesterday' tab
-              <button className="mt-2 h-10 bg-orange-500 text-white py-1 px-2 rounded-md hover:bg-orange-600 focus:outline-none">
+              <button className="mt-2 h-8 bg-orange-500 text-white py-1 px-2 rounded-md hover:bg-orange-600 focus:outline-none text-xs"> {/* Decreased button size */}
                 Add Addon
               </button>
             )}
