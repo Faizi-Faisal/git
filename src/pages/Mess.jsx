@@ -63,7 +63,7 @@ function Mess() {
   };
 
   return (
-    <div className="flex flex-col p-2 mt-2 pb-8"> {/* Reduced padding bottom */}
+    <div className="flex flex-col p-4 mt-2 pb-8"> 
       {/* Title and Track History Button */}
       <div className="flex justify-between items-center mb-2">
         <h1 className="text-lg font-semibold text-left">Mess Manager</h1> {/* Decreased title size */}
