@@ -18,8 +18,8 @@ function BottomNavBar() {
         className={`flex flex-col items-center ${activePage === 'PG' ? activeClass : inactiveClass}`}
         onClick={() => setActivePage('PG')}
       >
-        <i className="fas fa-building text-2xl"></i> {/* Increased icon size */}
-        <span className="text-sm">PG</span> {/* Increased text size */}
+        <i className="fas fa-building text-xl"></i> {/* Decreased icon size */}
+        <span className="text-xs">PG</span> {/* Decreased text size */}
       </Link>
 
       {/* Mess Tab */}
@@ -28,8 +28,8 @@ function BottomNavBar() {
         className={`flex flex-col items-center ${activePage === 'Mess' ? activeClass : inactiveClass}`}
         onClick={() => setActivePage('Mess')}
       >
-        <i className="fas fa-utensils text-2xl"></i> {/* Increased icon size */}
-        <span className="text-sm">Mess</span> {/* Increased text size */}
+        <i className="fas fa-utensils text-xl"></i> {/* Decreased icon size */}
+        <span className="text-xs">Mess</span> {/* Decreased text size */}
       </Link>
 
       {/* Food Tab */}
@@ -38,8 +38,8 @@ function BottomNavBar() {
         className={`flex flex-col items-center ${activePage === 'Food' ? activeClass : inactiveClass}`}
         onClick={() => setActivePage('Food')}
       >
-        <i className="fas fa-hamburger text-2xl"></i> {/* Increased icon size */}
-        <span className="text-sm">Food</span> {/* Increased text size */}
+        <i className="fas fa-hamburger text-xl"></i> {/* Decreased icon size */}
+        <span className="text-xs">Food</span> {/* Decreased text size */}
       </Link>
 
       {/* Rentals Tab */}
@@ -48,8 +48,8 @@ function BottomNavBar() {
         className={`flex flex-col items-center ${activePage === 'Rentals' ? activeClass : inactiveClass}`}
         onClick={() => setActivePage('Rentals')}
       >
-        <i className="fas fa-bicycle text-2xl"></i> {/* Increased icon size */}
-        <span className="text-sm">Rentals</span> {/* Increased text size */}
+        <i className="fas fa-bicycle text-xl"></i> {/* Decreased icon size */}
+        <span className="text-xs">Rentals</span> {/* Decreased text size */}
       </Link>
 
       {/* Profile Tab */}
@@ -58,8 +58,8 @@ function BottomNavBar() {
         className={`flex flex-col items-center ${activePage === 'Profile' ? activeClass : inactiveClass}`}
         onClick={() => setActivePage('Profile')}
       >
-        <i className="fas fa-user-circle text-2xl"></i> {/* Increased icon size */}
-        <span className="text-sm">Profile</span> {/* Increased text size */}
+        <i className="fas fa-user-circle text-xl"></i> {/* Decreased icon size */}
+        <span className="text-xs">Profile</span> {/* Decreased text size */}
       </Link>
     </nav>
   );
