@@ -90,27 +90,27 @@ function PG() {
         <h2 className="text-xl font-bold text-gray-800 mb-4">General</h2>
         <div className="grid grid-cols-2 gap-4">
           {/* Maintenance Card */}
-          <div className="flex flex-col items-center bg-white p-4 shadow-md rounded-lg border border-gray-300">
-            <i className="fas fa-tools text-3xl text-orange-500"></i>
-            <span className="mt-2 text-gray-700">Maintenance</span>
+          <div className="flex flex-col items-center bg-white p-2 shadow-md rounded-lg border border-gray-300"> {/* Reduced padding */}
+            <i className="fas fa-tools text-2xl text-orange-500"></i> {/* Reduced icon size */}
+            <span className="mt-1 text-gray-700 text-sm">Maintenance</span> {/* Reduced text size */}
           </div>
 
           {/* Pay Fee Card */}
-          <div className="flex flex-col items-center bg-white p-4 shadow-md rounded-lg border border-gray-300">
-            <i className="fas fa-wallet text-3xl text-orange-500"></i>
-            <span className="mt-2 text-gray-700">Pay Fee</span>
+          <div className="flex flex-col items-center bg-white p-2 shadow-md rounded-lg border border-gray-300"> {/* Reduced padding */}
+            <i className="fas fa-wallet text-2xl text-orange-500"></i> {/* Reduced icon size */}
+            <span className="mt-1 text-gray-700 text-sm">Pay Fee</span> {/* Reduced text size */}
           </div>
 
           {/* Payment History Card */}
-          <div className="flex flex-col items-center bg-white p-4 shadow-md rounded-lg border border-gray-300">
-            <i className="fas fa-history text-3xl text-orange-500"></i>
-            <span className="mt-2 text-gray-700">Payment History</span>
+          <div className="flex flex-col items-center bg-white p-2 shadow-md rounded-lg border border-gray-300"> {/* Reduced padding */}
+            <i className="fas fa-history text-2xl text-orange-500"></i> {/* Reduced icon size */}
+            <span className="mt-1 text-gray-700 text-sm">Payment History</span> {/* Reduced text size */}
           </div>
 
           {/* Raised Tickets Card */}
-          <div className="flex flex-col items-center bg-white p-4 shadow-md rounded-lg border border-gray-300">
-            <i className="fas fa-ticket-alt text-3xl text-orange-500"></i>
-            <span className="mt-2 text-gray-700">Raised Tickets</span>
+          <div className="flex flex-col items-center bg-white p-2 shadow-md rounded-lg border border-gray-300"> {/* Reduced padding */}
+            <i className="fas fa-ticket-alt text-2xl text-orange-500"></i> {/* Reduced icon size */}
+            <span className="mt-1 text-gray-700 text-sm">Raised Tickets</span> {/* Reduced text size */}
           </div>
         </div>
       </div>
